@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_content %}
+<h1>{{ publication.title }}</h1>
+<div class="row">
+    <div class="col-md-8">
+        <img src="{% static publication.image %}" alt="" width="100%">
+    </div>
+    <div class="col-md-4">
+        <h5>About the publication:</h5>
+        <p>{{ publication.publication_date }}</p>
+        <br>
+        <h5>URL:</h5>
+        <p>{{ publication.publication_url }}</p>
+    </div>
+</div>
+{% endblock %}

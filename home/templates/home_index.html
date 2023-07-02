@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+    <h1>Welcome to My Website</h1>
+    <p>{{ bio }}</p>
+    <p>Check out my:</p>
+    <ul>
+        <li><a href="{{ projects_url }}">Projects</a></li>
+        <li><a href="{{ publications_url }}">Publications</a></li>
+    </ul>
+{% endblock %}
